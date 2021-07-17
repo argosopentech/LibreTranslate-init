@@ -19,7 +19,7 @@ sudo swapon /swapfile
 sudo swapon --show
 
 # Download LibreTranslate-init
-git clone https://github.com/libretranslate/LibreTranslate-init.git ~/LibreTranslate-init
+git clone https://github.com/argosopentech/LibreTranslate-init.git ~/LibreTranslate-init
 
 # Download dependencies and run LibreTranslate on port 5000
 ~/LibreTranslate-init/setup.sh
