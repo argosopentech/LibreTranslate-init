@@ -30,5 +30,8 @@ git clone https://github.com/libretranslate/LibreTranslate-init.git ~/LibreTrans
 # Check LibreTranslate status
 sudo systemctl status libretranslate
 
+# Enable https
+~/LibreTranslate-init/get-cert.sh
+
 ```
 
