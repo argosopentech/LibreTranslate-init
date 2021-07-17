@@ -6,7 +6,7 @@ After=network.target
 User=argosopentech
 Group=www-data
 WorkingDirectory=/home/argosopentech/LibreTranslate
-Environment="PATH=/home/argosopentech/LibreTranslate/env/bin
+Environment="PATH=/home/argosopentech/LibreTranslate/env/bin"
 ExecStart=/home/argosopentech/LibreTranslate/env/bin/gunicorn --workers 3 --bind unix:libretranslate.sock -m 007 wsgi:app
 
 [Install]

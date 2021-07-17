@@ -27,7 +27,7 @@ libretranslate
 pip install gunicorn
 
 # Setup systemd
-sudo cp libretranslate.service /etc/systemd/system/
+sudo cp ~/LibreTranslate-init/libretranslate.service /etc/systemd/system/
 sudo systemctl start libretranslate
 sudo systemctl enable libretranslate
 
