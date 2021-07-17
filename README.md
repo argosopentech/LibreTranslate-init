@@ -9,10 +9,6 @@ Uses [LibreTranslate WSGI](https://community.libretranslate.com/t/is-wsgi-curren
 useradd argosopentech
 mkdir /home/argosopentech
 chown argosopentech:argosopentech /home/argosopentech
-cp -r ~/.ssh /home/argosopentech/.ssh
-chown -R argosopentech:argosopentech /home/argosopentech/.ssh
-passwd -d argosopentech
-chsh -s /bin/bash argosopentech
 usermod -aG sudo argosopentech
 su argosopentech
 

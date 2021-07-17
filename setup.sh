@@ -21,7 +21,6 @@ source ~/LibreTranslate/env/bin/activate
 
 # Install LibreTranslate
 pip install -e ~/LibreTranslate/
-libretranslate
 
 # Install gunicorn
 pip install gunicorn
@@ -32,7 +31,7 @@ sudo systemctl start libretranslate
 sudo systemctl enable libretranslate
 
 # Configure Nginx
-sudo cp nginx /etc/nginx/sites-available/default
+sudo cp ~/LibreTranslate-init/nginx /etc/nginx/sites-available/default
 sudo nginx -t
 sudo systemctl restart nginx
 
