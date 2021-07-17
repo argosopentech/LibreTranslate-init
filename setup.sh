@@ -18,7 +18,10 @@ git clone https://github.com/argosopentech/LibreTranslate.git ~/LibreTranslate
 # Setup virtualenv
 virtualenv ~/LibreTranslate/env
 source ~/LibreTranslate/env/bin/activate
+
+# Install LibreTranslate
 pip install -e ~/LibreTranslate/
+libretranslate
 
 # Install gunicorn
 pip install gunicorn
