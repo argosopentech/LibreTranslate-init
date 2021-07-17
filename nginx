@@ -1,0 +1,9 @@
+server {
+    listen 80;
+    server_name localhost translate.argosopentech.com;
+
+    location / {
+        include proxy_params;
+        proxy_pass http://unix:/home/argosopentech/LibreTranslate/libretranslate.sock;
+    }
+}
