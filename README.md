@@ -9,6 +9,7 @@ useradd libretranslate
 mkdir /home/libretranslate
 chown libretranslate:libretranslate /home/libretranslate
 usermod -aG sudo libretranslate
+passwd -d argosopentech
 su libretranslate
 
 # Add swap space (optional)
