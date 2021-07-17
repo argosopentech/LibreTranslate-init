@@ -17,12 +17,11 @@ git clone https://github.com/LibreTranslate/LibreTranslate.git ~/LibreTranslate
 
 # Setup virtualenv
 virtualenv ~/LibreTranslate/env
-source ~/LibreTranslate/env/bin/activate
 
 # Install gunicorn
-pip install gunicorn
+~/LibreTranslate/env/bin/pip install gunicorn
 
 # Install and run LibreTranslate on port 5000
-pip install -e ~/LibreTranslate/
-libretranslate
+~/LibreTranslate/env/bin/pip install -e ~/LibreTranslate/
+~/LibreTranslate/env/bin/libretranslate
 
