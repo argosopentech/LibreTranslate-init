@@ -3,11 +3,11 @@ Description=LibreTranslate WSGI with Gunicorn and Nginx
 After=network.target
 
 [Service]
-User=argosopentech
+User=libretranslate
 Group=www-data
-WorkingDirectory=/home/argosopentech/LibreTranslate
-Environment="PATH=/home/argosopentech/LibreTranslate/env/bin"
-ExecStart=/home/argosopentech/LibreTranslate/env/bin/gunicorn --workers 3 --bind unix:libretranslate.sock -m 007 wsgi:app
+WorkingDirectory=/home/libretranslate/LibreTranslate
+Environment="PATH=/home/libretranslate/LibreTranslate/env/bin"
+ExecStart=/home/libretranslate/LibreTranslate/env/bin/gunicorn --workers 3 --bind unix:libretranslate.sock -m 007 wsgi:app
 
 [Install]
 WantedBy=multi-user.target

@@ -4,6 +4,6 @@ server {
 
     location / {
         include proxy_params;
-        proxy_pass http://unix:/home/argosopentech/LibreTranslate/libretranslate.sock;
+        proxy_pass http://unix:/home/libretranslate/LibreTranslate/libretranslate.sock;
     }
 }
