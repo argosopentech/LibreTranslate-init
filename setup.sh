@@ -13,25 +13,16 @@ sudo apt-get install -y libicu-dev python3-icu pkg-config
 sudo apt-get install -y nginx
 
 # Download LibreTranslate source
-git clone https://github.com/argosopentech/LibreTranslate.git ~/LibreTranslate
+git clone https://github.com/LibreTranslate/LibreTranslate.git ~/LibreTranslate
 
 # Setup virtualenv
 virtualenv ~/LibreTranslate/env
 source ~/LibreTranslate/env/bin/activate
 
-# Install LibreTranslate
-pip install -e ~/LibreTranslate/
-
 # Install gunicorn
 pip install gunicorn
 
-# Setup systemd
-sudo cp ~/LibreTranslate-init/libretranslate.service /etc/systemd/system/
-sudo systemctl start libretranslate
-sudo systemctl enable libretranslate
-
-# Configure Nginx
-sudo cp ~/LibreTranslate-init/nginx /etc/nginx/sites-available/default
-sudo nginx -t
-sudo systemctl restart nginx
+# Install and run LibreTranslate on port 5000
+pip install -e ~/LibreTranslate/
+libretranslate
 
