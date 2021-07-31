@@ -1,5 +1,5 @@
 # LibreTranslate-init
-[Demo](https://translate.argosopentech.com) | [Video tutorial](https://www.youtube.com/watch?v=Wrt05Eqiv-I)
+[Demo](https://translate.argosopentech.com) | [Video tutorial](https://www.youtube.com/watch?v=mwacU-yqJwc)
 
 Run [LibreTranslate](https://libretranslate.com) on Ubuntu 20.04.
 
