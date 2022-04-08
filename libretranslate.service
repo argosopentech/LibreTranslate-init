@@ -8,6 +8,10 @@ Group=www-data
 WorkingDirectory=/home/libretranslate/LibreTranslate
 Environment="PATH=/home/libretranslate/LibreTranslate/env/bin"
 ExecStart=/home/libretranslate/LibreTranslate/env/bin/gunicorn --workers 3 --bind unix:libretranslate.sock -m 007 wsgi:app
+Restart=always
+ExecReload=/bin/kill -s HUP $MAINPID
+KillMode=mixed
+TimeoutStopSec=1
 
 [Install]
 WantedBy=multi-user.target
