@@ -14,12 +14,12 @@ usermod -aG sudo libretranslate
 passwd -d libretranslate
 su libretranslate
 
-# Add swap space (optional)
-sudo fallocate -l 10G /swapfile
-sudo chmod 600 /swapfile
-sudo mkswap /swapfile
-sudo swapon /swapfile
-sudo swapon --show
+# Optional: Add swap space
+# sudo fallocate -l 10G /swapfile
+# sudo chmod 600 /swapfile
+# sudo mkswap /swapfile
+# sudo swapon /swapfile
+# sudo swapon --show
 
 # Download LibreTranslate-init
 git clone https://github.com/argosopentech/LibreTranslate-init.git ~/LibreTranslate-init
