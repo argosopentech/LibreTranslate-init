@@ -20,6 +20,8 @@ git clone https://github.com/argosopentech/LibreTranslate-init.git ~/LibreTransl
 # Download dependencies and run LibreTranslate on port 5000
 ~/LibreTranslate-init/setup.sh
 
+# If using a https certificate edit ~/LibreTranslate-init/nginx server_name
+
 # Run LibreTranslate WSGI with nginx and systemd
 ~/LibreTranslate-init/run.sh
 
