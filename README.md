@@ -1,7 +1,7 @@
 # LibreTranslate-init
 [Demo](https://translate.argosopentech.com) | [Video tutorial](https://www.youtube.com/watch?v=mwacU-yqJwc) | [Video tutorial 2](https://www.youtube.com/watch?v=SJ8lNcn4cjE)
 
-Run [LibreTranslate](https://libretranslate.com) on Ubuntu 20.04.
+[LibreTranslate](https://libretranslate.com) install scripts for Ubuntu
 
 Uses [LibreTranslate WSGI](https://community.libretranslate.com/t/is-wsgi-currently-supported/24/3) with [Gunicorn and Nginx](https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-18-04).
 
