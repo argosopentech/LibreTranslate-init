@@ -22,6 +22,6 @@ virtualenv ~/LibreTranslate/env
 ~/LibreTranslate/env/bin/pip install gunicorn
 
 # Install and run LibreTranslate on port 5000
-~/LibreTranslate/env/bin/pip install -e ~/LibreTranslate/ --no-cache-dir
+~/LibreTranslate/env/bin/pip install ~/LibreTranslate/ --no-cache-dir
 ~/LibreTranslate/env/bin/libretranslate
 
