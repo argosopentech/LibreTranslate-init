@@ -1,9 +1,10 @@
 # LibreTranslate-init
-[Demo](https://translate.argosopentech.com) | [Video tutorial](https://www.youtube.com/watch?v=mwacU-yqJwc) | [Video tutorial 2](https://www.youtube.com/watch?v=SJ8lNcn4cjE)
 
 [LibreTranslate](https://libretranslate.com) install scripts for Ubuntu
 
-Uses [LibreTranslate WSGI](https://community.libretranslate.com/t/is-wsgi-currently-supported/24/3) with [Gunicorn and Nginx](https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-18-04).
+Uses WSGI with [Gunicorn and Nginx](https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-18-04).
+
+## Install
 
 ```
 # Add libretranslate user
@@ -33,3 +34,9 @@ sudo systemctl status libretranslate
 
 ```
 
+#### Tutorials
+- [Video tutorial](https://www.youtube.com/watch?v=mwacU-yqJwc)
+- [Video tutorial 2](https://www.youtube.com/watch?v=SJ8lNcn4cjE)
+
+#### [Demo](https://translate.argosopentech.com)
+Hosted on [DigitalOcean](https://m.do.co/c/a1af57be6e3f)
