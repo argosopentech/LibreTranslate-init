@@ -1,6 +1,6 @@
 # LibreTranslate-init
 
-Shell scripts to install LibreTranslate [LibreTranslate](https://libretranslate.com)
+Shell scripts to install [LibreTranslate](https://libretranslate.com)
 
 Uses WSGI with [Gunicorn and Nginx](https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-18-04).
 
