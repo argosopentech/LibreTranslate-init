@@ -39,7 +39,7 @@ sudo systemctl status libretranslate
 - [Video tutorial 2](https://www.youtube.com/watch?v=SJ8lNcn4cjE)
 
 #### Configuration
-1. Find the setting you would like to change in the [LibreTranslate settings](https://github.com/LibreTranslate/LibreTranslate#settings--flags)
+1. Find the setting you would like to change in the [LibreTranslate settings](https://github.com/LibreTranslate/LibreTranslate#arguments)
 2. Add the setting to the environment of your libretranslate.service SystemD file
 
 #### [Demo](https://translate.argosopentech.com)
