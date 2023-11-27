@@ -8,30 +8,34 @@ Uses WSGI with [Gunicorn and Nginx](https://www.digitalocean.com/community/tutor
 
 ```
 # Add libretranslate user
-useradd libretranslate
-mkdir /home/libretranslate
-chown libretranslate:libretranslate /home/libretranslate
-usermod -aG sudo libretranslate
-passwd -d libretranslate
-su libretranslate
+sudo useradd -m -s /bin/bash libretranslate
+sudo usermod -aG sudo libretranslate
+
+# Switch to the user's home directory
+cd /home/libretranslate
 
 # Download LibreTranslate-init
-git clone https://github.com/argosopentech/LibreTranslate-init.git ~/LibreTranslate-init
+git clone https://github.com/argosopentech/LibreTranslate-init.git ./LibreTranslate-init
+sudo chown -R libretranslate:libretranslate /home/libretranslate/LibreTranslate-init
 
 # Download dependencies and run LibreTranslate on port 5000
-~/LibreTranslate-init/setup.sh
+sudo ./LibreTranslate-init/setup.sh
+
+# Ask for the LibreTranslate domain
+read -p "Enter the domain for LibreTranslate: " libretranslate_domain
 
 # Set server_name to your domain name in ~/LibreTranslate-init/nginx
+sudo sed -i "s/translate.argosopentech.com/$libretranslate_domain/" ./LibreTranslate-init/nginx
+
 
 # Run LibreTranslate WSGI with nginx and systemd
-~/LibreTranslate-init/run.sh
+sudo ./LibreTranslate-init/run.sh
 
 # Check LibreTranslate status
 sudo systemctl status libretranslate
 
 # Enable https
-~/LibreTranslate-init/get-cert.sh
-
+sudo ./LibreTranslate-init/get-cert.sh
 ```
 
 #### Tutorials
