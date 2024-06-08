@@ -42,5 +42,4 @@ sudo systemctl status libretranslate
 1. Find the setting you would like to change in the [LibreTranslate settings](https://github.com/LibreTranslate/LibreTranslate#arguments)
 2. Add the setting to the environment of your libretranslate.service SystemD file
 
-#### [Demo](https://translate.argosopentech.com)
-Hosted on [DigitalOcean](https://m.do.co/c/a1af57be6e3f)
+#### [Demo](https://libretranslate.com)
