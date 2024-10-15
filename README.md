@@ -4,6 +4,10 @@ Shell scripts to install [LibreTranslate](https://libretranslate.com)
 
 Uses WSGI with [Gunicorn and Nginx](https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-18-04).
 
+Tested on Ubuntu 20.04.
+
+[Known Python version bug with Ubuntu 24.04](https://github.com/LibreTranslate/LibreTranslate/issues/611#issuecomment-2415239429) and Python 3.12.
+
 ## Install
 
 ```
