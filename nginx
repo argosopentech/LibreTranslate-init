@@ -1,6 +1,6 @@
 server {
     listen 80;
-    server_name localhost translate.argosopentech.com;
+    server_name _;
 
     location / {
         include proxy_params;
