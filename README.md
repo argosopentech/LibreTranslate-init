@@ -25,6 +25,10 @@ git clone https://github.com/argosopentech/LibreTranslate-init.git ~/LibreTransl
 # Download dependencies and run LibreTranslate on port 5000
 ~/LibreTranslate-init/setup.sh
 
+# Add your hostname or IP address to this command
+# When you run LibreTranslate for the first time it will download all of the language model packages
+~/LibreTranslate/env/bin/libretranslate --host <your hostname or IP address>
+
 # Set server_name to your domain name in ~/LibreTranslate-init/nginx
 
 # Run LibreTranslate WSGI with nginx and systemd
