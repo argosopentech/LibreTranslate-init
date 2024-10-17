@@ -11,7 +11,7 @@ Tested on Ubuntu 20.04.
 ## Install
 
 ```
-# Add libretranslate user
+# Create libretranslate user
 useradd libretranslate
 mkdir /home/libretranslate
 chown libretranslate:libretranslate /home/libretranslate
